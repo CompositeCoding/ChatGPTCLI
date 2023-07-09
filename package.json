@@ -1,0 +1,37 @@
+{
+  "name": "cligpt",
+  "version": "1.0.0",
+  "description": "A CLI tool for quick queries to ChatGPT",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "tsc --preserveWatchOutput && node dist/index.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.3.1",
+    "openai": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.0",
+    "jest": "^29.6.1",
+    "nodemon": "^1.14.9",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "./tsconfig.json"
+      }
+    }
+  }
+}

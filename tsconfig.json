@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "rootDir": "src",
+      "outDir": "dist",
+      "strict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "target": "ES2019",
+      "module": "node16",
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "typeRoots": ["./src/types", "./node_modules/@types"]
+    },
+    "exclude": [
+      "**/*.test.ts",
+    ]
+}
